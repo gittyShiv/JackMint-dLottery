@@ -83,7 +83,7 @@ contract HelperConfig is CodeConstants, Script {
         returns (NetworkConfig memory mainnetNetworkConfig)
     {
         mainnetNetworkConfig = NetworkConfig({
-            subscriptionId: 43762174973406545606330959050145751867519258532659660612870730232611746769670, // If left as 0, our scripts will create one!
+            subscriptionId: 0, // If left as 0, our scripts will create one!
             gasLane: 0x9fe0eebf5e446e3c998ec9bb19951541aee00bb90ea201ae456421a2ded86805,
             automationUpdateInterval: 30, // 30 seconds
             jackMintEntranceFee: 0.01 ether,
@@ -102,8 +102,8 @@ contract HelperConfig is CodeConstants, Script {
         sepoliaNetworkConfig = NetworkConfig({
             subscriptionId: 43762174973406545606330959050145751867519258532659660612870730232611746769670, // If left as 0, our scripts will create one!
             gasLane: 0x787d74caea10b2b357790d5b5247c2f63d1d91572a9846f780606e4d953677ae,
-            automationUpdateInterval: 30, // 30 seconds
-            jackMintEntranceFee: 0.01 ether,
+            automationUpdateInterval: 50, // 30 seconds
+            jackMintEntranceFee: 0.001 ether,
             callbackGasLimit: 500000, // 500,000 gas
             vrfCoordinatorV2_5: 0x9DdfaCa8183c41ad55329BdeeD9F6A8d53168B1B,
             link: 0x779877A7B0D9E8603169DdbD7836e478b4624789,
