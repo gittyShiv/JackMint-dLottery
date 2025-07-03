@@ -100,7 +100,7 @@ contract HelperConfig is CodeConstants, Script {
         returns (NetworkConfig memory sepoliaNetworkConfig)
     {
         sepoliaNetworkConfig = NetworkConfig({
-            subscriptionId: 43762174973406545606330959050145751867519258532659660612870730232611746769670, // If left as 0, our scripts will create one!
+            subscriptionId: 65357403064905787869844523446149267496465760217602282403240683443578104463819, // If left as 0, our scripts will create one!
             gasLane: 0x787d74caea10b2b357790d5b5247c2f63d1d91572a9846f780606e4d953677ae,
             automationUpdateInterval: 50, // 30 seconds
             jackMintEntranceFee: 0.001 ether,
