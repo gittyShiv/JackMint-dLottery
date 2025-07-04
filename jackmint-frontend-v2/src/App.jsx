@@ -7,6 +7,8 @@ import WinnersDashboard from "./components/WinnersDashboard.jsx";
 import WhyJoin from "./components/WhyJoin.jsx";
 import Footer from "./components/Footer.jsx";
 import EnterLottery from "./components/EnterLottery.jsx";
+import ProtocolWhySection from "./components/ProtocolsWhySection.jsx";
+
 
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
         <WhyJoin />
         <WinnersDashboard />
       </main>
+      <ProtocolWhySection />
       <Footer />
     </div>
   );

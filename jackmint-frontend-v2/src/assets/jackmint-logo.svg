@@ -1,0 +1,52 @@
+<svg width="420" height="200" viewBox="0 0 420 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gold gradient -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700"></stop>
+      <stop offset="100%" stop-color="#FBC02D"></stop>
+    </linearGradient>
+
+    <!-- Leaf gradient -->
+    <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E676"></stop>
+      <stop offset="100%" stop-color="#00C853"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="420" height="200" fill="#1A0841"></rect>
+
+  <!-- Trophy Group -->
+  <g transform="translate(20, 15)">
+    <!-- Trophy Cup -->
+    <path d="M50 100 C30 90 20 70 20 40 A30 30 0 0 1 80 40 C80 70 70 90 50 100 Z" fill="url(#goldGradient)"></path>
+
+    <!-- Connector Stem -->
+    <rect x="45" y="100" width="10" height="10" rx="2" fill="url(#goldGradient)"></rect>
+
+    <!-- Trophy Base -->
+    <rect x="32" y="110" width="36" height="10" rx="2" fill="#F9A825"></rect>
+    <rect x="26" y="120" width="48" height="10" rx="2" fill="#F57F17"></rect>
+    <rect x="22" y="130" width="56" height="10" rx="2" fill="#E65100"></rect>
+
+    <!-- V-curve handles -->
+    <path d="M22 42 C0 60 0 70 22 88" stroke="url(#goldGradient)" stroke-width="5" fill="none" stroke-linecap="round"></path>
+    <path d="M78 42 C100 60 100 70 78 88" stroke="url(#goldGradient)" stroke-width="5" fill="none" stroke-linecap="round"></path>
+
+    <!-- Realistic Mint Leaf -->
+    <g transform="translate(50, 55)">
+      <path d="M0,-20 C-10,-5 -10,15 0,30 C10,15 10,-5 0,-20 Z" fill="url(#leafGradient)"></path>
+      <path d="M0,-18 L0,28" stroke="#1B5E20" stroke-width="2"></path>
+      <path d="M0,-10 L-5,-6 M0,-10 L5,-6" stroke="#1B5E20" stroke-width="1.2"></path>
+      <path d="M0,0 L-6,4 M0,0 L6,4" stroke="#1B5E20" stroke-width="1.2"></path>
+      <path d="M0,10 L-5,14 M0,10 L5,14" stroke="#1B5E20" stroke-width="1.2"></path>
+    </g>
+  </g>
+
+  <!-- Logo Text -->
+  <text x="130" y="95" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white">jack</text>
+  <text x="220" y="95" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#00E6D3">mint</text>
+
+  <!-- Tagline -->
+  <text x="130" y="125" font-family="Arial, sans-serif" font-size="16" fill="white">win with luck &amp; blockchain</text>
+</svg>
