@@ -154,7 +154,6 @@ cast send <RAFFLE_CONTRACT> "enterRaffle()" --value 0.01ether --private-key $PRI
 - [x] Subscription auto-creation  
 - [ ] Frontend DApp with live winner dashboard  
 - [ ] Countdown timer for next draw  
-- [ ] UI integration with PoolTogether-inspired design  
 
 ---
 
