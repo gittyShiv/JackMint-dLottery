@@ -1,19 +1,34 @@
 import React from "react";
+import bird from "../assets/bird.svg"; // Assuming you have a bird SVG asset
 
 // Animated Bird SVG (with optional scale/flip for reuse)
 function Bird({ x = 0, y = 0, scale = 1, flip = false }) {
   return (
-    <g transform={`translate(${x} ${y}) scale(${scale} ${scale * (flip ? -1 : 1)})`}>
-      {/* Body */}
-      <ellipse cx="0" cy="0" rx="32" ry="28" fill="#a385ff" />
-      {/* Wing */}
-      <ellipse cx="10" cy="9" rx="12" ry="10" fill="#fff" opacity="0.15" />
-      {/* Beak */}
-      <ellipse cx="30" cy="0" rx="8" ry="6" fill="#fedb6a" />
+    <g
+      transform={`translate(${x} ${y}) scale(${scale} ${scale * (flip ? -1 : 1)})`}
+    >
+      {/* Body: main circle */}
+      <ellipse cx="0" cy="0" rx="32" ry="22" fill="#a385ff" />
+      {/* Wing: semi-circle */}
+      <path
+        d="M-11,0 a11,11 0 0,0 22,0"
+        fill="#8252ff"
+        transform="rotate(-20 -1 7)"
+      />
+      {/* Head: circle */}
+      <circle cx="20" cy="-16" r="16" fill="#a385ff" />
+      {/* Beak: triangle */}
+      <polygon
+        points="34,-12 54,-8 34,-4"
+        fill="#fec84b"
+        transform="rotate(-10 34 -8)"
+      />
       {/* Eye */}
-      <circle cx="-10" cy="-5" r="4" fill="#2a155a" />
+      <circle cx="27" cy="-18" r="3.5" fill="#2a155a" />
       {/* Leg */}
-      <rect x="-6" y="25" width="4" height="14" rx="2" fill="#fedb6a" />
+      <rect x="-6" y="18" width="8" height="20" rx="4" fill="#fec84b" />
+      {/* Foot */}
+      <ellipse cx="-2" cy="38" rx="8" ry="4" fill="#fec84b" />
     </g>
   );
 }
@@ -102,7 +117,7 @@ export default function PoolTogetherHeroBg({ children }) {
           )}
         </g>
         {/* Sparkle */}
-        <Sparkle x={260} y={420} />
+        {/* <Sparkle x={260} y={420} /> */}
         {/* Animated balls along pipes */}
         <circle r="11" fill="#fec84b">
           <animateMotion
@@ -128,7 +143,7 @@ export default function PoolTogetherHeroBg({ children }) {
           />
         </circle>
         {/* Birds */}
-        <Bird x={220} y={410} scale={1.1} />
+        <Bird x={200} y={410} scale={1.1} />
         <Bird x={1350} y={58} scale={0.85} flip />
         {/* (Optional: second sparkle, more birds, more balls as needed) */}
         <defs>

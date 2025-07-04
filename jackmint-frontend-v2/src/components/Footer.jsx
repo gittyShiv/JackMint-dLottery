@@ -22,7 +22,17 @@ const icons = {
       <circle cx="21" cy="12" r="1.4" fill="#16ffe0"/>
     </svg>
   ),
+  
 };
+
+const chainlinkLogo = (
+  <svg width="32" height="32" viewBox="0 0 250 250" fill="none">
+    <polygon points="125,30 210,75 210,175 125,220 40,175 40,75" fill="#2A5ADA"/>
+    <polygon points="125,50 193,87 193,163 125,200 57,163 57,87" fill="#fff"/>
+    <polygon points="125,75 172,100 172,150 125,175 78,150 78,100" fill="#2A5ADA"/>
+  </svg>
+);
+
 
 export default function Footer() {
   return (
@@ -30,15 +40,14 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
         {/* Logo, made with love, Chainlink */}
         <div className="flex flex-col items-center md:items-start gap-3">
-          <img src="/assets/jackmint-logo.svg" alt="JackMint Logo" className="h-10 mb-1" />
           <div className="flex items-center space-x-2 text-sm text-white/80">
             <span>Made with</span>
             <span className="text-red-500 text-lg">♥</span>
-            <span>by the JackMint team</span>
+            <span>by the Shivam Maurya</span>
           </div>
           <div className="flex items-center gap-2 mt-2">
             {/* Chainlink logo here */}
-            {/* ... */}
+             {chainlinkLogo}
             <span className="ml-2 text-[#16ffe0] text-sm font-semibold">
               Powered by Chainlink VRF
             </span>
