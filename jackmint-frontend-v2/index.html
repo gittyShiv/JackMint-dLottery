@@ -2,23 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>JackMint Lottery</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JackMint dLottery</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
-        darkMode: "class",
         theme: {
           extend: {
             colors: {
-              primary: "#7e22ce",
-              secondary: "#3b0764",
+              primary: "#25144b",
+              accent: "#8e6cff",
+              highlight: "#00f5d4",
+              card: "#2a195b",
+              text: "#f6f6f9"
             },
-          },
-        },
-      };
+            fontFamily: {
+              heading: ["Inter", "sans-serif"],
+              body: ["Inter", "sans-serif"]
+            }
+          }
+        }
+      }
     </script>
+    <link href="https://fonts.googleapis.com/css?family=Inter:700,500,400" rel="stylesheet" />
   </head>
-  <body class="bg-gradient-to-br from-[#1d0b46] to-[#3c1874] text-white">
+  <body class="bg-primary text-text font-body">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
