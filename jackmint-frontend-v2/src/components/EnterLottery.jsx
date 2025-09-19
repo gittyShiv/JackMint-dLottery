@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import jackmintAbi from "../abi/jackmintAbi.json";
 
-const CONTRACT_ADDRESS = "YOUR_CONTRACT_ADDRESS"; // <-- replace this!
+const CONTRACT_ADDRESS = "0x8478f62440c0be8722f20b8804170113a5535b09"; // <-- replace this!
 
 export default function EnterLottery() {
   const [account, setAccount] = useState(null);
